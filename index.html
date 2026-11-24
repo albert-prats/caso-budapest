@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Gaceta del Danubio: el caso Budapest</title>
+<meta name="description" content="Un caso para detectives de varios países: ¿quién se ha llevado la felicidad de Budapest?">
+<meta property="og:title" content="Caso Budapest">
+<meta property="og:description" content="Un caso para detectives de varios países: ¿quién se ha llevado la felicidad de Budapest? Únete a la partida y elige tu país.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#d5cfc2;--pa:#efe6d2;--ink:#161514;--gr:#6f6a61;--bu:#7a1f2b;--ln:#161514;box-sizing:border-box;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0f0e0d;--pa:#1e1c1a;--ink:#eadfca;--gr:#8e887d;--bu:#d0586b;--ln:#eadfca}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0f0e0d;--pa:#1e1c1a;--ink:#eadfca;--gr:#8e887d;--bu:#d0586b;--ln:#eadfca}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,"Times New Roman",serif}
+main{max-width:720px;margin:0 auto;padding:12px}
+.s{background:var(--pa);border:3px double var(--ln);padding:26px 26px 30px}
+.meta{text-align:center;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gr)}
+h1{font-size:2.6rem;line-height:1.05;margin:.15em 0 .1em;text-align:center;font-weight:400;font-variant:small-caps;letter-spacing:.14em}
+svg{display:block;width:100%;height:64px;color:var(--gr);margin-top:6px;border-bottom:1px solid var(--ln)}
+h2{font-size:1.5rem;font-weight:400;font-style:italic;margin:1em 0 .3em;line-height:1.2}h3{font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bu);margin:1.2em 0 .3em}
+.t{display:flex;flex-wrap:wrap;margin:12px 0 0;border-bottom:1px solid var(--ln)}
+button{font:inherit;color:var(--ink);background:transparent;border:1px solid var(--ln);padding:8px 11px;cursor:pointer}
+.t button{flex:1;border:0;border-bottom:2px solid transparent;font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;padding:10px 4px}.t button.on{background:none;color:var(--bu);border-bottom-color:var(--bu)}
+button.on{background:var(--ink);color:var(--pa)}.go{display:inline-block;font:inherit;padding:8px 11px;text-decoration:none;cursor:pointer;background:var(--bu);color:#fff;border:1px solid var(--bu);font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-top:10px}button:disabled{opacity:.5;cursor:default}input{font:inherit;font-size:16px;color:var(--ink);background:var(--pa);border:1px solid var(--ln);padding:8px;width:12em;max-width:100%}.lk{font-size:.85rem;word-break:break-all;margin:6px 0}.ch .go{margin-top:0;font-size:.88rem}
+.ch{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.ch button{font-size:.88rem}
+dt{font-weight:700;margin-top:.6em}dd{margin:0;color:var(--gr)}li{margin:.3em 0}
+.k{border:1px solid var(--ln);padding:10px 12px;margin:12px 0}.k b.x{color:var(--bu)}
+.r{display:flex;justify-content:space-between;gap:8px;font-size:.93rem;padding:3px 0;border-bottom:1px dotted var(--gr)}.bad{color:var(--bu);font-weight:700}.mu{color:var(--gr);font-size:.82rem}
+.big{font-size:2.6rem;color:var(--bu);line-height:1}table{width:100%;border-collapse:collapse;font-size:.92rem}td,th{border-bottom:1px dotted var(--gr);padding:6px 4px;text-align:left}select{font:inherit;color:var(--ink);background:var(--pa);border:1px solid var(--ln);padding:6px}.ok{color:var(--bu);font-weight:700}
+</style></head><body><main><div class="s" id="a"></div></main>
+<script>
+const D={"B":[3.7,8.6,3.3,9.8,4.3,6.5,4.2,7.3,8.4,8.8,6.1],"R":[3.8,8.2,5.5,8.3,6.6,7.9,7.1,6.6,7.3,8.6,8.4],"P":[["España",[2.8,6.9,4.7,5.3,8.2,8.1,5.6,5.9,8.3,8.2,6.7]],["Italia",[3.6,7.7,4.7,6.2,8.0,7.4,3.5,5.6,6.8,6.6,6.7]],["Alemania",[3.8,8.4,5.2,8.1,5.0,7.6,4.8,8.3,6.9,7.4,8.0]],["Suecia",[3.2,7.9,5.6,8.7,8.1,9.0,5.0,8.7,7.3,8.4,8.9]],["Polonia",[2.4,8.2,2.9,9.4,4.4,7.3,3.0,6.7,7.6,7.3,6.5]],["Francia",[3.3,7.2,4.9,8.0,7.4,7.9,9.7,7.1,8.5,7.7,7.3]],["Portugal",[2.8,7.7,4.8,4.6,6.3,7.9,5.2,5.8,7.2,6.7,5.9]],["Países Bajos",[3.3,8.7,5.4,7.6,7.0,7.5,6.0,8.2,8.2,8.3,8.9]]],"W":[["Renta disponible per cápita (USD PPP)",0,1,33442.6,30163.7],["Tasa de empleo (%)",1,1,77.8,76.3],["Tasa de paro (%)",1,0,2.6,4.0],["Habitaciones por persona",2,1,1.7,2.0],["Satisfechos con el precio de la vivienda (%)",2,1,29.5,49.8],["Población con secundaria o más (%)",3,1,96.7,87.2],["Esperanza de vida (años)",4,1,77.9,81.7],["Mortalidad (por 1.000 hab.)",4,0,11.1,8.7],["Contaminación PM2.5 (µg/m³)",5,0,15.2,9.9],["Homicidios (por 100.000 hab.)",6,0,0.8,1.1],["Participación electoral (%)",7,1,75.3,72.0],["Hogares con banda ancha (%)",8,1,98.5,93.5],["Apoyo social percibido (%)",9,1,95.0,94.1]]};
+const S=['Renta','Empleo','Vivienda','Educación','Salud','Medio ambiente','Seguridad','Participación cívica','Acceso a servicios','Comunidad'];
+const MON=['Puente de las Cadenas','Mercado Central','Castillo de Buda','Academia de Ciencias','Baños Széchenyi','Monte Gellért','Bastión de los Pescadores','Parlamento','Puente de la Libertad','Plaza de los Héroes'];
+const M=[[0,1],[2],[3],[4],[5],[6],[7],[8,9]];
+const f=x=>String(+x.toFixed(1)).replace('.',',');
+let rd=[],tab=0,pi=null,pc=null,sel=null,sh={},API=null,dbst='cargando',warn='',busy=false,cf=false,nueva=false,cod='',copiado=false,unsub=null,tm=null;
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
+const OKC=/^[a-z0-9-]{3,24}$/,KC=()=>'cb_c_'+cod;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
+function paisGuardado(){const sc=ls(KC());return sc!==null&&D.P[+sc]?+sc:null}
+{let hc='';try{hc=decodeURIComponent(location.hash.slice(1)).trim().toLowerCase()}catch(e){}if(OKC.test(hc)){cod=hc;pi=paisGuardado()}}
+const worse=w=>w[2]?w[3]<w[4]:w[3]>w[4],gap=t=>D.B[t]-D.R[t];
+const lec=(t,r)=>D.W.filter(w=>w[1]==t).map((w,i)=>w[0]+': '+(r&&r[i]?'peor':'igual o mejor')).join('; ');
+const SV='<svg viewBox="0 0 600 70" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><g fill="currentColor"><rect x="20" y="30" width="12" height="40"/><polygon points="18,30 34,30 26,6"/><rect x="95" y="34" width="9" height="36"/><rect x="185" y="34" width="9" height="36"/><rect x="80" y="60" width="130" height="3"/><path d="M80 62Q100 34 99 34Q140 66 190 34Q190 34 210 62" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="260" y="50" width="230" height="20"/><rect x="340" y="36" width="50" height="14"/><rect x="268" y="38" width="9" height="12"/><polygon points="266,38 279,38 272,22"/><rect x="473" y="38" width="9" height="12"/><polygon points="471,38 484,38 477,22"/><rect x="364" y="4" width="3" height="14"/><rect x="530" y="40" width="30" height="30"/></g><path d="M338 36Q365 -2 392 36Z" fill="#7a1f2b"/><path d="M528 40Q545 14 562 40Z" fill="#7a1f2b"/></svg>';
+const nx=(i,t)=>'<button class="go" onclick="tab='+i+';draw()">'+t+'</button>';
+const gen=()=>{const a='abcdefghjkmnpqrstuvwxyz23456789',u=new Uint32Array(6);crypto.getRandomValues(u);let s='';u.forEach(x=>{s+=a[x%a.length]});return s};
+const URLP=()=>location.origin+location.pathname+'#'+cod;
+const INICIO=()=>'<h2>Empezar</h2><p>Una persona crea la partida y pasa el enlace al grupo. Todos los que abran ese enlace juegan la misma partida, sin registrarse.</p><button class="go" onclick="crear()">Crear partida nueva</button><h3>¿Tienes un código o un enlace?</h3><p class="fila"><input id="cj" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="por ejemplo, k7m2qa" aria-label="Código de partida" onkeydown="if(event.key===\'Enter\')unirse()"> <button onclick="unirse()">Entrar</button></p>'+(warn?'<p class="bad">'+warn+'</p>':'')+est();
+const INV=()=>{const u=URLP(),t='Caso Budapest: únete a la partida y elige tu país → '+u;return '<div class="k"><h3>Invitar al grupo</h3><p class="mu">Código de la partida: <b>'+cod+'</b>. Todos los que abran este enlace juegan la misma partida.</p><p class="lk">'+esc(u)+'</p><div class="ch"><a class="go" href="https://wa.me/?text='+encodeURIComponent(t)+'" target="_blank" rel="noopener">Enviar por WhatsApp</a><button onclick="copiar()">'+(copiado?'Copiado ✓':'Copiar enlace')+'</button></div></div>'};
+const CASO=()=>'<h2>Una ciudad que lo tiene casi todo… y una felicidad que se ha esfumado</h2><p class="mu">Informe reservado · datos de la OCDE</p><div class="k"><p>Satisfacción con la vida en Budapest</p><div class="big">'+f(D.B[10])+' / 10</div><p>La referencia, en cambio, alcanza <b>'+f(D.R[10])+'</b>.</p></div><p><b>Alguien se ha llevado la felicidad de Budapest sin dejar huellas. ¿Quién ha sido, y con qué arma?</b></p><p>Cada detective guarda en su ficha de país una parte de las pruebas. Ninguna basta por sí sola.</p>'+nx(1,'Leer las reglas →');
+const RU='<h2>Hoja de reglas</h2><p>Un caso para detectives de varios países. Ninguno puede resolverlo solo.</p><h3>Cómo se juega</h3><ol><li>Quien dirige la partida la crea y pasa el enlace al grupo (por ejemplo, por WhatsApp). Nadie necesita registrarse.</li><li>Cada detective elige un <b>país</b> en la sección III. La elección es <b>definitiva</b>: solo verás tu ficha de país.</li><li><b>Ronda de informes:</b> cada detective cuenta en voz alta lo que ve en su ficha.</li><li>Cuando lo tengáis claro, cada país hace <b>una acusación</b> desde su propio móvil (sección IV): un sospechoso y su lectura del arma (¿cómo está Budapest en ese dato: peor, o igual o mejor, que la referencia?). Todos los países pueden acusar a la vez.</li><li>En la sección V todos veis, en directo, las acusaciones de cada país. La solución no se muestra aquí: la da quien dirige la partida.</li></ol><h3>Glosario del caso</h3><dl><dt>Víctima</dt><dd>La satisfacción con la vida de Budapest (puntuación de 0 a 10).</dd><dt>Referencia</dt><dd>La vara de medir: 100 regiones del mundo donde la gente es feliz y tiene mucha vida comunitaria.</dd><dt>Sospechoso</dt><dd>Cada uno de los 10 temas del bienestar: renta, empleo, vivienda, educación, salud, medio ambiente, seguridad, participación cívica, acceso a servicios y comunidad.</dd><dt>Arma</dt><dd>El dato concreto de un tema (por ejemplo, la esperanza de vida) que demuestra que ese sospechoso es culpable. Al acusar, dices si ese dato está peor, o igual o mejor, que en la referencia.</dd><dt>Coartada</dt><dd>Un tema en el que Budapest va igual o mejor que la referencia: es inocente.</dd><dt>Culpable</dt><dd>Un sospechoso que puntúa al menos 1 punto por debajo de la referencia y cuya arma lo confirma.</dd><dt>Cabecilla y cómplices</dt><dd>El cabecilla es el culpable con mayor diferencia respecto a la referencia. Los demás culpables son cómplices.</dd><dt>Falso culpable</dt><dd>Un tema que puntúa mal, pero cuyo dato no lo respalda.</dd><dt>Ficha de país</dt><dd>Tu expediente: los temas que solo tú ves, con sus pruebas.</dd><dt>Acusación</dt><dd>La decisión de cada país: un sospechoso y la lectura de su arma. Es definitiva: solo cuenta la primera que se registra.</dd></dl>'+nx(2,'Ir a mi ficha de país →');
+function ficha(){let h='';M[pi].forEach(t=>{const d=gap(t);h+='<div class="k"><h3>Sospechoso: '+S[t]+'</h3><p class="mu">Escena: '+MON[t]+'</p><div class="r"><span>Budapest</span><span><b>'+f(D.B[t])+'</b> / 10</span></div><div class="r"><span>Referencia</span><span>'+f(D.R[t])+' / 10</span></div><div class="r"><span>Diferencia</span><span class="'+(d<=-1?'bad':'')+'">'+(d>0?'+':'')+f(d)+'</span></div><div class="r"><span>En '+D.P[pi][0]+' (mediana)</span><span>'+f(D.P[pi][1][t])+' / 10</span></div><h3>Armas de este sospechoso</h3>'+D.W.filter(w=>w[1]==t).map(w=>'<div class="r"><span>'+w[0]+'</span><span class="'+(worse(w)?'bad':'')+'">'+f(w[3])+' <span class="mu">(ref. '+f(w[4])+')</span> '+(worse(w)?'▼ peor':'▲ mejor')+'</span></div>').join('')+'</div>'});return h}
+const all=()=>{const o={};D.P.forEach((p,i)=>{const a=sh['p'+i];if(a&&Number.isInteger(a.s)&&a.s>=0&&a.s<10&&Array.isArray(a.r))o[i]={s:a.s,r:a.r.map(x=>x?1:0)}});return o};
+const est=()=>({ok:cod?'<p class="mu">● Conectado: las acusaciones se ven en directo en todos los móviles.</p>':'',cargando:'<p class="mu">Conectando con la base de datos…</p>',nocfg:'<p class="bad">Falta configurar la base de datos (Firebase): pega la configuración de tu proyecto en este archivo.</p>',off:'<p class="bad">Sin conexión con la base de datos. Revisa tu conexión a internet y recarga la página.</p>'})[dbst]||'';
+function draw(){const ci=document.getElementById('cj'),cv=ci?ci.value:null;
+let h='<div class="meta">Expediente reservado'+(cod?' · Partida '+cod:'')+'</div><h1>Caso Budapest</h1>'+SV;
+if(!cod)h+=INICIO();
+else{h+='<div class="t">'+['I. El caso','II. Reglas','III. Ficha de país','IV. Acusación','V. Resumen'].map((n,i)=>'<button class="'+(i==tab?'on':'')+'" onclick="tab='+i+';draw()">'+n+'</button>').join('')+'</div>';
+if(tab==0)h+=(nueva?'<p style="margin-top:1em"><b>Partida creada.</b> Pasa el enlace al grupo antes de empezar.</p>'+INV():'')+CASO();
+if(tab==1)h+=RU;
+if(tab==2){if(pi===null){h+='<h2>Ficha de país</h2><p>Elige tu país. <b>No podrás cambiarlo ni ver el de otros detectives.</b></p><div class="ch">'+D.P.map((p,i)=>'<button class="'+(i===pc?'on':'')+'" onclick="pc='+i+';draw()">'+p[0]+'</button>').join('')+'</div>'+(pc!==null?'<button class="go" onclick="elegir()">Confirmar: '+D.P[pc][0]+'</button>':'')}
+else h+='<h2>Ficha de país: '+D.P[pi][0]+'</h2><p class="mu">Tu país está fijado para toda la partida. Solo tú ves esta ficha.</p>'+ficha()+nx(3,'Ir a la acusación →')}
+if(tab==3){if(pi===null)h+='<h2>Acusación</h2><p>Primero elige tu país en la sección III.</p>';
+else{const a=all()[pi];if(a)h+='<h2>Acusación registrada</h2><div class="k"><p><b>'+D.P[pi][0]+'</b> acusa a <b>'+S[a.s]+'</b>. Lectura del arma: '+lec(a.s,a.r)+'.</p><p class="mu">Es definitiva y ya la ve todo el grupo en el resumen.</p></div>'+nx(4,'Ver el resumen →');
+else{const ws=sel!==null?D.W.filter(w=>w[1]==sel):[],ok=API&&dbst=='ok'&&!busy;h+='<h2>Acusación de '+D.P[pi][0]+'</h2><p class="mu">Una sola acusación por país, definitiva. Hablad antes con vuestro equipo.</p>'+est()+'<h3>Sospechoso</h3><div class="ch">'+S.map((n,t)=>'<button class="'+(sel===t?'on':'')+'" onclick="sel='+t+';rd=[];warn=\'\';draw()">'+n+'</button>').join('')+'</div>'+(sel!==null?'<h3>¿Qué dice el arma?</h3><p class="mu">Comparado con la referencia, ¿cómo está Budapest en cada dato? Preguntad a quien tenga ese tema en su ficha.</p>'+ws.map((w,i)=>'<p><b>'+w[0]+'</b></p><div class="ch"><button class="'+(rd[i]===1?'on':'')+'" onclick="rd['+i+']=1;draw()">Peor</button><button class="'+(rd[i]===0?'on':'')+'" onclick="rd['+i+']=0;draw()">Igual o mejor</button></div>').join('')+(ws.every((w,i)=>rd[i]===0||rd[i]===1)?'<button class="go" '+(ok?'':'disabled ')+'onclick="acusar()">'+(busy?'Enviando…':'Acusar a '+S[sel])+'</button>':''):'')+(warn?'<p class="bad">'+warn+'</p>':'')}}}
+if(tab==4){const A=all(),n=Object.keys(A).length;h+='<h2>Resumen de acusaciones</h2><p class="mu">'+n+' de '+D.P.length+' países han acusado.</p>'+est()+'<table><tr><th>País</th><th>Sospechoso</th><th>Arma (lectura)</th></tr>'+D.P.map((p,i)=>{const a=A[i];return '<tr><td>'+p[0]+(i===pi?' (tú)':'')+'</td><td>'+(a?S[a.s]:'<span class="mu">sin acusar</span>')+'</td><td>'+(a?lec(a.s,a.r):'—')+'</td></tr>'}).join('')+'</table>';
+if(n==D.P.length)h+='<div class="k"><p><b>Todos los países han acusado.</b> Es el momento de que quien dirige la partida dé la solución.</p></div>';
+h+=INV()+'<p><button onclick="otra()">'+(cf?'¿Seguro? Pasarás a una partida nueva, con otro enlace':'Empezar otra partida')+'</button></p>'}}
+h+='<p class="mu" style="margin-top:22px">Datos: OCDE, Regional Well-Being. Las puntuaciones son relativas al conjunto de la OCDE.</p>';
+document.getElementById('a').innerHTML=h;if(cv!==null){const n=document.getElementById('cj');if(n)n.value=cv}}
+function suscribir(){if(!API||!cod)return;if(unsub){try{unsub()}catch(e){}}sh={};dbst='cargando';unsub=API.escuchar(cod,rows=>{dbst='ok';sh={};rows.forEach(([id,d])=>{sh[id]=d});draw()},()=>{dbst='off';draw()})}
+function entrar(c){cod=c;try{history.replaceState(null,'','#'+cod)}catch(e){location.hash=cod}pi=paisGuardado();pc=null;sel=null;rd=[];warn='';cf=false;tab=0;suscribir();draw()}
+function crear(){nueva=true;entrar(gen())}
+function unirse(){let v=((document.getElementById('cj')||{}).value||'').trim().toLowerCase();if(v.includes('#'))v=v.split('#').pop();if(!OKC.test(v)){warn='Ese código no es válido. Pide el enlace a quien dirige la partida.';draw();return}nueva=false;entrar(v)}
+function otra(){if(!cf){cf=true;draw();return}crear()}
+function elegir(){if(pc===null)return;pi=pc;ls(KC(),String(pi));draw()}
+function copiar(){try{navigator.clipboard.writeText(URLP()).then(()=>{copiado=true;draw();setTimeout(()=>{copiado=false;draw()},2000)},()=>{})}catch(e){}}
+async function acusar(){if(!API||busy||pi===null||sel===null||!cod)return;if(all()[pi]){draw();return}busy=true;warn='';draw();const v={s:sel,r:rd.slice()};try{await API.acusar(cod,pi,v);sh['p'+pi]=v}catch(e){warn=e&&e.code==='permission-denied'?'Tu país ya tenía una acusación registrada: solo cuenta la primera.':'No se pudo guardar la acusación. Revisa tu conexión y vuelve a intentarlo.'}busy=false;draw()}
+function conectar(api){clearTimeout(tm);API=api;if(cod)suscribir();else dbst='ok';draw()}
+function sinConfig(){clearTimeout(tm);dbst='nocfg';draw()}
+function sinConexion(){clearTimeout(tm);dbst='off';draw()}
+addEventListener('hashchange',()=>location.reload());
+tm=setTimeout(()=>{if(!API&&dbst=='cargando')sinConexion()},10000);
+draw();
+</script>
+<script type="module">
+// ─── CONFIGURACIÓN DE FIREBASE ───────────────────────────────────────────────
+// Sustituye este objeto por el que te da Firebase en
+// Configuración del proyecto → Tus apps → App web (</>) → firebaseConfig
+const firebaseConfig = {
+  apiKey: "AIzaSyBjEtmzwFpB4G5c6gyxfkWKbDD-5o0U7Ow",
+  authDomain: "la-gaceta-del-danubio-6e038.firebaseapp.com",
+  projectId: "la-gaceta-del-danubio-6e038",
+  storageBucket: "la-gaceta-del-danubio-6e038.firebasestorage.app",
+  messagingSenderId: "1062978264773",
+  appId: "1:1062978264773:web:e0c33799b16362c1701aac"
+};
+// ─────────────────────────────────────────────────────────────────────────────
+const V = "12.12.0";
+if (!firebaseConfig.apiKey || firebaseConfig.apiKey === "PEGA_AQUI") {
+  sinConfig();
+} else {
+  try {
+    const { initializeApp } = await import(`https://www.gstatic.com/firebasejs/${V}/firebase-app.js`);
+    const { getFirestore, collection, doc, setDoc, onSnapshot, serverTimestamp } =
+      await import(`https://www.gstatic.com/firebasejs/${V}/firebase-firestore.js`);
+    const db = getFirestore(initializeApp(firebaseConfig));
+    conectar({
+      escuchar: (c, ok, ko) => onSnapshot(
+        collection(db, "partidas", c, "acusaciones"),
+        sn => ok(sn.docs.map(d => [d.id, d.data()])),
+        ko
+      ),
+      acusar: (c, p, v) => setDoc(
+        doc(db, "partidas", c, "acusaciones", "p" + p),
+        { s: v.s, r: v.r, t: serverTimestamp() }
+      )
+    });
+  } catch (e) {
+    console.error(e);
+    sinConexion();
+  }
+}
+</script>
+</body></html>
